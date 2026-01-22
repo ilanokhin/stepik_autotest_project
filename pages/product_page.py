@@ -8,7 +8,7 @@ class ProductPage(BasePage):
         self.should_be_product_name()
         self.should_be_product_price()
 
-    def add_product_do_basket(self):
+    def add_product_to_basket(self):
         add_to_basket_button = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_BUTTON)
         add_to_basket_button.click()
 
